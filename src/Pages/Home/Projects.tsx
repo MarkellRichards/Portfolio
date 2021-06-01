@@ -6,7 +6,7 @@ import { Project, projectData } from "../../Data/Copywrite";
 import { Link } from "react-router-dom";
 
 const ProjectSection = styled.section`
-  padding: 4rem 0;
+  padding: 6rem 0;
 `;
 
 const ProjectContainer = styled.div`

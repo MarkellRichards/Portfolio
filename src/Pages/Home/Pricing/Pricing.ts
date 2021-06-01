@@ -86,6 +86,10 @@ export const PricingParagraph = styled.p`
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
+
+  @media only screen and (max-width: 500px) {
+    width: 80%;
+  }
 `;
 
 export const PricingListContainer = styled.div`

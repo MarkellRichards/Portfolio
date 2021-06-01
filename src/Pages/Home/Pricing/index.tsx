@@ -44,7 +44,7 @@ const Pricing = () => {
                 <PricingListContainer>
                   <PricingList>
                     {price.features.map((feature) => (
-                      <PricingListItem>{feature}</PricingListItem>
+                      <PricingListItem key={feature}>{feature}</PricingListItem>
                     ))}
                   </PricingList>
                 </PricingListContainer>

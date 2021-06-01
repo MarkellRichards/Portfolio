@@ -10,6 +10,12 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .custom-shape-divider-bottom-1622236241 {
+    display: none;
+  }
+}
+
 .custom-shape-divider-bottom-1622236241 svg {
   position: relative;
   display: block;
