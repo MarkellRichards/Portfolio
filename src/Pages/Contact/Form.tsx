@@ -65,7 +65,7 @@ const FormComponent = () => {
               onSubmit={(values, actions) => {
                 axios({
                   method: "POST",
-                  url: `https://formspree.io/f/${process.env.formspree_id}`,
+                  url: `${process.env.FORMSPREE_ENDPOINT}`,
                   data: values,
                 })
                   .then((response) => {
