@@ -1,0 +1,47 @@
+.custom-shape-divider-bottom-1622236241 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1622236241 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+  z-index: 10;
+}
+
+.custom-shape-divider-bottom-1622236241 .shape-fill {
+  fill: #ffffff;
+  z-index: 10;
+}
+
+.filterActive {
+  border-bottom: 2px solid orange;
+}
+
+.show {
+  animation: growDown 100ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+#mobile-nav:not(.show) {
+  display: none;
+}
+
+@keyframes growDown {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
