@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { ButtonLink } from "../../shared/Buttons";
 
 const HeroContainer = styled.div`
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   flex-direction: column;
@@ -20,6 +21,7 @@ const HeroContainer = styled.div`
 
 const ContentContainer = styled.div`
   max-width: 1100px;
+  height: auto;
   width: 100%;
   padding: 0 1.5rem;
   z-index: 20;
@@ -27,10 +29,16 @@ const ContentContainer = styled.div`
 
 const HeroContent = styled.div`
   max-width: 1100px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: left;
   z-index: 20;
+  padding: 6rem 0;
+
+  @media only screen and (max-height: 400px) {
+    justify-content: end;
+  }
 `;
 
 const HeroSubTitle = styled.p`
