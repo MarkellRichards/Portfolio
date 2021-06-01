@@ -99,6 +99,7 @@ export const projectData: Array<Project> = [
       "Functional Components",
     ],
     site: "",
+    github: "https://github.com/MarkellRichards/Portfolio",
   },
   {
     id: 2,

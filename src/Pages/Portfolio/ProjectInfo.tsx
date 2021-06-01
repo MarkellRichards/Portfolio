@@ -45,13 +45,15 @@ const ProjectInfo = ({ project }: Props) => {
             <LeftContainer>
               <ProjectImage src={project.src} alt={project.alt} />
               <ButtonContainer>
-                <AnchorLink
-                  style={ButtonStyle}
-                  href={project.site}
-                  target="_blank"
-                >
-                  Visit Site
-                </AnchorLink>
+                {project.site && (
+                  <AnchorLink
+                    style={ButtonStyle}
+                    href={project.site}
+                    target="_blank"
+                  >
+                    Visit Site
+                  </AnchorLink>
+                )}
                 <AnchorLink
                   style={ButtonStyle}
                   href={project.github}
