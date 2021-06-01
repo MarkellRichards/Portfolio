@@ -65,7 +65,7 @@ const FormComponent = () => {
               onSubmit={(values, actions) => {
                 axios({
                   method: "POST",
-                  url: "https://formspree.io/f/myylwpdq",
+                  url: `https://formspree.io/f/${process.env.formspree_id}`,
                   data: values,
                 })
                   .then((response) => {
@@ -122,5 +122,3 @@ const FormComponent = () => {
 };
 
 export default FormComponent;
-
-// https://formspree.io/f/myylwpdq
